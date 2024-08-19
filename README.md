@@ -11,21 +11,21 @@ Filtering: Removes small clusters to avoid false positives.
 Verticality and Parallelism Check: Ensures that the detected lines are sufficiently vertical and parallel, maintaining consistency with expected crop lines.
 
 ## Requirements
-Python 3.x
-OpenCV 4.x
-Numpy
+- Python 3.x
+- OpenCV 4.x
+- Numpy
 
 ## Usage
-Load an Image: Load the image of the field to be analyzed.
+- Load an Image: Load the image of the field to be analyzed.
 
-Brown Area Analysis: The algorithm identifies brown areas, indicating the cultivated parts of the field.
+- Brown Area Analysis: The algorithm identifies brown areas, indicating the cultivated parts of the field.
 
-Morphological Operations: These operations (dilation, erosion, etc.) are applied to refine the detected brown areas.
+- Morphological Operations: These operations (dilation, erosion, etc.) are applied to refine the detected brown areas.
 
-Cluster Detection: Significant clusters are identified and enclosed with a convex hull, and a line is drawn to represent the crop line.
+- Cluster Detection: Significant clusters are identified and enclosed with a convex hull, and a line is drawn to represent the crop line.
 
-Cluster Filtering: Small clusters are removed to avoid detection errors.
+- Cluster Filtering: Small clusters are removed to avoid detection errors.
 
-Verticality and Parallelism Verification: The detected lines are checked to ensure they are sufficiently vertical and parallel.
+- Verticality and Parallelism Verification: The detected lines are checked to ensure they are sufficiently vertical and parallel.
 
-Final Result: The resulting image shows the detected crop lines, highlighted and drawn, ready for further analysis or use in other applications.
+- Final Result: The resulting image shows the detected crop lines, highlighted and drawn, ready for further analysis or use in other applications.
